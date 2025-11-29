@@ -7,10 +7,9 @@ services:
     restart: always
     environment:
       - NODE_ENV=production
-      - VIRTUAL_HOST=iqossticks.ru
-      - LETSENCRYPT_HOST=iqossticks.ru
+      - VIRTUAL_HOST=iqossticks.ru,chelyabinsk.iqossticks.ru,dnr.iqossticks.ru,donetsk.iqossticks.ru,ekb.iqossticks.ru,irkutsk.iqossticks.ru,kaliningrad.iqossticks.ru,kazan.iqossticks.ru,kemerovo.iqossticks.ru,khabarovsk.iqossticks.ru,krasnodar.iqossticks.ru,krasnoyarsk.iqossticks.ru,krym.iqossticks.ru,moscow.iqossticks.ru,msk.iqossticks.ru,nn.iqossticks.ru,novosibirsk.iqossticks.ru,nsk.iqossticks.ru,omsk.iqossticks.ru,perm.iqossticks.ru,rostov.iqossticks.ru,samara.iqossticks.ru,spb.iqossticks.ru,ufa.iqossticks.ru,vladivostok.iqossticks.ru,volgograd.iqossticks.ru,voronezh.iqossticks.ru,www.iqossticks.ru
+      - LETSENCRYPT_HOST=iqossticks.ru,chelyabinsk.iqossticks.ru,dnr.iqossticks.ru,donetsk.iqossticks.ru,ekb.iqossticks.ru,irkutsk.iqossticks.ru,kaliningrad.iqossticks.ru,kazan.iqossticks.ru,kemerovo.iqossticks.ru,khabarovsk.iqossticks.ru,krasnodar.iqossticks.ru,krasnoyarsk.iqossticks.ru,krym.iqossticks.ru,moscow.iqossticks.ru,msk.iqossticks.ru,nn.iqossticks.ru,novosibirsk.iqossticks.ru,nsk.iqossticks.ru,omsk.iqossticks.ru,perm.iqossticks.ru,rostov.iqossticks.ru,samara.iqossticks.ru,spb.iqossticks.ru,ufa.iqossticks.ru,vladivostok.iqossticks.ru,volgograd.iqossticks.ru,voronezh.iqossticks.ru,www.iqossticks.ru
       - LETSENCRYPT_EMAIL=qwe@gmail.com
-      # Редиректы с www на non-www для всех поддоменов
       - REDIRECT_www.iqossticks.ru=iqossticks.ru
     networks:
       - web
