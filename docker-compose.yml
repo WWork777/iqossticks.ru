@@ -11,6 +11,32 @@ services:
       - LETSENCRYPT_HOST=iqossticks.ru,chelyabinsk.iqossticks.ru,dnr.iqossticks.ru,donetsk.iqossticks.ru,ekb.iqossticks.ru,irkutsk.iqossticks.ru,kaliningrad.iqossticks.ru,kazan.iqossticks.ru,kemerovo.iqossticks.ru,khabarovsk.iqossticks.ru,krasnodar.iqossticks.ru,krasnoyarsk.iqossticks.ru,krym.iqossticks.ru,moscow.iqossticks.ru,msk.iqossticks.ru,nn.iqossticks.ru,novosibirsk.iqossticks.ru,nsk.iqossticks.ru,omsk.iqossticks.ru,perm.iqossticks.ru,rostov.iqossticks.ru,samara.iqossticks.ru,spb.iqossticks.ru,ufa.iqossticks.ru,vladivostok.iqossticks.ru,volgograd.iqossticks.ru,voronezh.iqossticks.ru,www.iqossticks.ru
       - LETSENCRYPT_EMAIL=qwe@gmail.com
       - REDIRECT_www.iqossticks.ru=iqossticks.ru
+      - REDIRECT_www.chelyabinsk.iqossticks.ru=chelyabinsk.iqossticks.ru
+      - REDIRECT_www.dnr.iqossticks.ru=dnr.iqossticks.ru
+      - REDIRECT_www.donetsk.iqossticks.ru=donetsk.iqossticks.ru
+      - REDIRECT_www.ekb.iqossticks.ru=ekb.iqossticks.ru
+      - REDIRECT_www.irkutsk.iqossticks.ru=irkutsk.iqossticks.ru
+      - REDIRECT_www.kaliningrad.iqossticks.ru=kaliningrad.iqossticks.ru
+      - REDIRECT_www.kazan.iqossticks.ru=kazan.iqossticks.ru
+      - REDIRECT_www.kemerovo.iqossticks.ru=kemerovo.iqossticks.ru
+      - REDIRECT_www.khabarovsk.iqossticks.ru=khabarovsk.iqossticks.ru
+      - REDIRECT_www.krasnodar.iqossticks.ru=krasnodar.iqossticks.ru
+      - REDIRECT_www.krasnoyarsk.iqossticks.ru=krasnoyarsk.iqossticks.ru
+      - REDIRECT_www.krym.iqossticks.ru=krym.iqossticks.ru
+      - REDIRECT_www.moscow.iqossticks.ru=moscow.iqossticks.ru
+      - REDIRECT_www.msk.iqossticks.ru=msk.iqossticks.ru
+      - REDIRECT_www.nn.iqossticks.ru=nn.iqossticks.ru
+      - REDIRECT_www.novosibirsk.iqossticks.ru=novosibirsk.iqossticks.ru
+      - REDIRECT_www.nsk.iqossticks.ru=nsk.iqossticks.ru
+      - REDIRECT_www.omsk.iqossticks.ru=omsk.iqossticks.ru
+      - REDIRECT_www.perm.iqossticks.ru=perm.iqossticks.ru
+      - REDIRECT_www.rostov.iqossticks.ru=rostov.iqossticks.ru
+      - REDIRECT_www.samara.iqossticks.ru=samara.iqossticks.ru
+      - REDIRECT_www.spb.iqossticks.ru=spb.iqossticks.ru
+      - REDIRECT_www.ufa.iqossticks.ru=ufa.iqossticks.ru
+      - REDIRECT_www.vladivostok.iqossticks.ru=vladivostok.iqossticks.ru
+      - REDIRECT_www.volgograd.iqossticks.ru=volgograd.iqossticks.ru
+      - REDIRECT_www.voronezh.iqossticks.ru=voronezh.iqossticks.ru
     networks:
       - web
     volumes:
