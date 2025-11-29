@@ -7,9 +7,11 @@ services:
     restart: always
     environment:
       - NODE_ENV=production
-      - VIRTUAL_HOST=iqossticks.ru,chelyabinsk.iqossticks.ru,dnr.iqossticks.ru,donetsk.iqossticks.ru,ekb.iqossticks.ru,irkutsk.iqossticks.ru,kaliningrad.iqossticks.ru,kazan.iqossticks.ru,kemerovo.iqossticks.ru,khabarovsk.iqossticks.ru,krasnodar.iqossticks.ru,krasnoyarsk.iqossticks.ru,krym.iqossticks.ru,moscow.iqossticks.ru,msk.iqossticks.ru,nn.iqossticks.ru,novosibirsk.iqossticks.ru,nsk.iqossticks.ru,omsk.iqossticks.ru,perm.iqossticks.ru,rostov.iqossticks.ru,samara.iqossticks.ru,spb.iqossticks.ru,ufa.iqossticks.ru,vladivostok.iqossticks.ru,volgograd.iqossticks.ru,voronezh.iqossticks.ru,www.iqossticks.ru
-      - LETSENCRYPT_HOST=iqossticks.ru,chelyabinsk.iqossticks.ru,dnr.iqossticks.ru,donetsk.iqossticks.ru,ekb.iqossticks.ru,irkutsk.iqossticks.ru,kaliningrad.iqossticks.ru,kazan.iqossticks.ru,kemerovo.iqossticks.ru,khabarovsk.iqossticks.ru,krasnodar.iqossticks.ru,krasnoyarsk.iqossticks.ru,krym.iqossticks.ru,moscow.iqossticks.ru,msk.iqossticks.ru,nn.iqossticks.ru,novosibirsk.iqossticks.ru,nsk.iqossticks.ru,omsk.iqossticks.ru,perm.iqossticks.ru,rostov.iqossticks.ru,samara.iqossticks.ru,spb.iqossticks.ru,ufa.iqossticks.ru,vladivostok.iqossticks.ru,volgograd.iqossticks.ru,voronezh.iqossticks.ru,www.iqossticks.ru
+
+      - VIRTUAL_HOST=iqossticks.ru,chelyabinsk.iqossticks.ru,dnr.iqossticks.ru,donetsk.iqossticks.ru,ekb.iqossticks.ru,irkutsk.iqossticks.ru,kaliningrad.iqossticks.ru,kazan.iqossticks.ru,kemerovo.iqossticks.ru,khabarovsk.iqossticks.ru,krasnodar.iqossticks.ru,krasnoyarsk.iqossticks.ru,krym.iqossticks.ru,moscow.iqossticks.ru,msk.iqossticks.ru,nn.iqossticks.ru,novosibirsk.iqossticks.ru,nsk.iqossticks.ru,omsk.iqossticks.ru,perm.iqossticks.ru,rostov.iqossticks.ru,samara.iqossticks.ru,spb.iqossticks.ru,ufa.iqossticks.ru,vladivostok.iqossticks.ru,volgograd.iqossticks.ru,voronezh.iqossticks.ru,www.iqossticks.ru,www.chelyabinsk.iqossticks.ru,www.dnr.iqossticks.ru,www.donetsk.iqossticks.ru,www.ekb.iqossticks.ru,www.irkutsk.iqossticks.ru,www.kaliningrad.iqossticks.ru,www.kazan.iqossticks.ru,www.kemerovo.iqossticks.ru,www.khabarovsk.iqossticks.ru,www.krasnodar.iqossticks.ru,www.krasnoyarsk.iqossticks.ru,www.krym.iqossticks.ru,www.moscow.iqossticks.ru,www.msk.iqossticks.ru,www.nn.iqossticks.ru,www.novosibirsk.iqossticks.ru,www.nsk.iqossticks.ru,www.omsk.iqossticks.ru,www.perm.iqossticks.ru,www.rostov.iqossticks.ru,www.samara.iqossticks.ru,www.spb.iqossticks.ru,www.ufa.iqossticks.ru,www.vladivostok.iqossticks.ru,www.volgograd.iqossticks.ru,www.voronezh.iqossticks.ru
+      - LETSENCRYPT_HOST=iqossticks.ru,chelyabinsk.iqossticks.ru,dnr.iqossticks.ru,donetsk.iqossticks.ru,ekb.iqossticks.ru,irkutsk.iqossticks.ru,kaliningrad.iqossticks.ru,kazan.iqossticks.ru,kemerovo.iqossticks.ru,khabarovsk.iqossticks.ru,krasnodar.iqossticks.ru,krasnoyarsk.iqossticks.ru,krym.iqossticks.ru,moscow.iqossticks.ru,msk.iqossticks.ru,nn.iqossticks.ru,novosibirsk.iqossticks.ru,nsk.iqossticks.ru,omsk.iqossticks.ru,perm.iqossticks.ru,rostov.iqossticks.ru,samara.iqossticks.ru,spb.iqossticks.ru,ufa.iqossticks.ru,vladivostok.iqossticks.ru,volgograd.iqossticks.ru,voronezh.iqossticks.ru,www.iqossticks.ru,www.chelyabinsk.iqossticks.ru,www.dnr.iqossticks.ru,www.donetsk.iqossticks.ru,www.ekb.iqossticks.ru,www.irkutsk.iqossticks.ru,www.kaliningrad.iqossticks.ru,www.kazan.iqossticks.ru,www.kemerovo.iqossticks.ru,www.khabarovsk.iqossticks.ru,www.krasnodar.iqossticks.ru,www.krasnoyarsk.iqossticks.ru,www.krym.iqossticks.ru,www.moscow.iqossticks.ru,www.msk.iqossticks.ru,www.nn.iqossticks.ru,www.novosibirsk.iqossticks.ru,www.nsk.iqossticks.ru,www.omsk.iqossticks.ru,www.perm.iqossticks.ru,www.rostov.iqossticks.ru,www.samara.iqossticks.ru,www.spb.iqossticks.ru,www.ufa.iqossticks.ru,www.vladivostok.iqossticks.ru,www.volgograd.iqossticks.ru,www.voronezh.iqossticks.ru
       - LETSENCRYPT_EMAIL=qwe@gmail.com
+
       - REDIRECT_www.iqossticks.ru=iqossticks.ru
       - REDIRECT_www.chelyabinsk.iqossticks.ru=chelyabinsk.iqossticks.ru
       - REDIRECT_www.dnr.iqossticks.ru=dnr.iqossticks.ru
@@ -37,8 +39,10 @@ services:
       - REDIRECT_www.vladivostok.iqossticks.ru=vladivostok.iqossticks.ru
       - REDIRECT_www.volgograd.iqossticks.ru=volgograd.iqossticks.ru
       - REDIRECT_www.voronezh.iqossticks.ru=voronezh.iqossticks.ru
+
     networks:
       - web
+
     volumes:
       - /var/www/iluma-store.ru/images:/app/public/images:ro
 
