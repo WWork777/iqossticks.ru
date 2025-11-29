@@ -10,6 +10,7 @@ services:
       - VIRTUAL_HOST=iqossticks.ru, chelyabinsk.iqossticks.ru, www.chelyabinsk.iqossticks.ru, www.iqossticks.ru
       - LETSENCRYPT_HOST=iqossticks.ru, chelyabinsk.iqossticks.ru, www.chelyabinsk.iqossticks.ru, www.iqossticks.ru
       - LETSENCRYPT_EMAIL=qwe@gmail.com
+      - REDIRECT_www.iqossticks.ru=iqossticks.ru
     networks:
       - web
     volumes:
