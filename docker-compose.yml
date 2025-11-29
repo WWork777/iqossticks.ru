@@ -7,8 +7,8 @@ services:
     restart: always
     environment:
       - NODE_ENV=production
-      - VIRTUAL_HOST=iqossticks.ru, chelyabinsk.iqossticks.ru
-      - LETSENCRYPT_HOST=iqossticks.ru, chelyabinsk.iqossticks.ru
+      - VIRTUAL_HOST=iqossticks.ru, chelyabinsk.iqossticks.ru, www.chelyabinsk.iqossticks.ru, www.iqossticks.ru
+      - LETSENCRYPT_HOST=iqossticks.ru, chelyabinsk.iqossticks.ru, www.chelyabinsk.iqossticks.ru, www.iqossticks.ru
       - LETSENCRYPT_EMAIL=qwe@gmail.com
     networks:
       - web
