@@ -4,7 +4,7 @@ export const dynamic = "force-dynamic";
 import ClientFilters from "./client";
 
 async function fetchItems() {
-  const res = await fetch("https://iqossticks.ru/api/products/getdevices", {
+  const res = await fetch("https://iluma-store.ru/api/products/getdevices", {
     cache: "no-store",
   });
   if (!res.ok) throw new Error("Ошибка загрузки товаров");

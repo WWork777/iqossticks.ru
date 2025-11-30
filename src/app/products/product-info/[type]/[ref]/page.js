@@ -4,7 +4,7 @@ import { headers } from "next/headers";
 
 async function fetchItems(type, ref) {
   const res = await fetch(
-    `https://iqossticks.ru/api/products/getproductinfo/${type}/${ref}`,
+    `https://iluma-store.ru/api/products/getproductinfo/${type}/${ref}`,
     { cache: "no-store" }
   );
   if (!res.ok) throw new Error("Ошибка загрузки товаров");
