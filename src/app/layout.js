@@ -42,13 +42,11 @@ export default function RootLayout({ children }) {
           <YandexMetrika />
           <Bootstrap />
           <Header />
-          <div className="newYearFon">
-            {children}
-          </div>
+          <div className="newYearFon">{children}</div>
           <Footer />
           <Cart />
           <CartButton />
-          <BlockModal allowClose={true}/>
+          {/* <BlockModal allowClose={true} /> */}
         </CartProvider>
       </body>
     </html>
