@@ -8,7 +8,7 @@ import Cart from "../../components/Cart/cart";
 import CartButton from "../../components/CartButton/CartButton";
 import YandexMetrika from "../../components/YandexMetrika/YandexMEtrika";
 import YandexAd from "../../components/YandexAd/YandexAd";
-// import BlockModal from "../../components/BlockModal/BlockModal";
+import BlockModal from "../../components/BlockModal/BlockModal";
 import Script from "next/script";
 
 const montserrat = localFont({
@@ -42,10 +42,13 @@ export default function RootLayout({ children }) {
           <YandexMetrika />
           <Bootstrap />
           <Header />
-          {children}
+          <div className="newYearFon">
+            {children}
+          </div>
           <Footer />
           <Cart />
           <CartButton />
+          <BlockModal allowClose={true}/>
         </CartProvider>
       </body>
     </html>
