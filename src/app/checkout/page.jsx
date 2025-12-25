@@ -154,8 +154,7 @@ const CheckoutPage = () => {
 
     if (name === "lastName") {
       isValid = /^[a-zA-Zа-яА-ЯёЁ0-9\s-]*$/.test(value);
-    }
-    else if (name === "city") {
+    } else if (name === "city") {
       isValid = /^[а-яА-ЯёЁ0-9\s-]*$/.test(value);
     } else if (name === "streetAddress") {
       isValid = /^[а-яА-ЯёЁ0-9\s-]*$/.test(value);
@@ -785,7 +784,7 @@ ${formattedCart}
           body: JSON.stringify({
             chat_id: "-1002155675591",
             text: message,
-            parse_mode: "Markdown",
+            parse_mode: "HTML",
           }),
         });
 
@@ -868,7 +867,9 @@ ${formattedCart}
       <div className="checkout-form">
         <div className="plitka">
           <h1>Оформление заказа</h1>
-          <h5>ВАЖНО! Укажите Ваш номер в WhatsApp или Telegram ник для связи</h5>
+          <h5>
+            ВАЖНО! Укажите Ваш номер в WhatsApp или Telegram ник для связи
+          </h5>
         </div>
         <form onSubmit={handleSubmit} ref={formRef}>
           <div className="checkout-name">
@@ -1049,7 +1050,7 @@ ${formattedCart}
                 }}
               >
                 <input
-                className="privacy-input"
+                  className="privacy-input"
                   type="checkbox"
                   checked={formData.privacyConsent}
                   onChange={handleConsentChange}
