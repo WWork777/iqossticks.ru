@@ -93,12 +93,12 @@ const CheckoutPage = () => {
   const scroolTo = (element) => {
     if (element) {
       element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center'
+        behavior: "smooth",
+        block: "center",
       });
       element.focus();
     }
-  }
+  };
 
   const validateForm = () => {
     const newErrors = {};
@@ -106,35 +106,40 @@ const CheckoutPage = () => {
     let element;
 
     if (selectedMethod === "delivery") {
-
       if (!formData.streetAddress.trim()) {
-        element = document.querySelector(`[placeholder="Номер дома и название улицы"]`);
-        scroolTo(element)
+        element = document.querySelector(
+          `[placeholder="Номер дома и название улицы"]`,
+        );
+        scroolTo(element);
         newErrors.streetAddress = "Введите адрес";
       }
 
       if (!formData.city.trim()) {
         element = document.querySelector(`[placeholder="Город"]`);
-        scroolTo(element)
+        scroolTo(element);
         newErrors.city = "Введите город";
       }
     }
 
     if (!formData.phoneNumber) {
-      element = document.querySelector(`[placeholder="Введите номер телефона"]`);
-      scroolTo(element)
+      element = document.querySelector(
+        `[placeholder="Введите номер телефона"]`,
+      );
+      scroolTo(element);
       newErrors.phoneNumber = "Введите номер телефона";
     } else if (formData.phoneNumber.replace(/\D/g, "").length < 11) {
-      element = document.querySelector(`[placeholder="Введите номер телефона"]`);
-      scroolTo(element)
+      element = document.querySelector(
+        `[placeholder="Введите номер телефона"]`,
+      );
+      scroolTo(element);
       newErrors.phoneNumber = "Некорректный номер телефона";
     }
 
     if (!formData.lastName.trim()) {
-      elements = document.getElementsByName('lastName');
+      elements = document.getElementsByName("lastName");
       if (elements.length > 0) {
         element = elements[0];
-        scroolTo(element)
+        scroolTo(element);
       }
       newErrors.lastName = "Введите имя";
     }
@@ -1096,7 +1101,11 @@ ${formattedCart}
             </div>
             <button
               onClick={handleExternalSubmit}
-              disabled={loading || selectedMethod === "pickup"}
+              disabled={
+                loading ||
+                selectedMethod === "pickup" ||
+                (onlyPacksAndBlocks && totalQuantity < 10 && !hasBlock)
+              }
               style={{
                 opacity: selectedMethod === "pickup" ? 0.5 : 1,
                 cursor: selectedMethod === "pickup" ? "not-allowed" : "pointer",
