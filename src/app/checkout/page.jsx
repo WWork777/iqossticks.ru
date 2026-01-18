@@ -814,6 +814,8 @@ const CheckoutPage = () => {
         const message = `
 Заказ с сайта ${site}
 
+${headerLine}
+
 Имя: ${formData.lastName}   
 Телефон: +${formData.phoneNumber}
 Telegram: ${telegramUsername}
