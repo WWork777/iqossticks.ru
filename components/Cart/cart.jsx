@@ -152,7 +152,12 @@ const Cart = () => {
               onClick={checkOut}
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-              disabled={shouldDisableCheckout} // Блокируем кнопку, если условие выполняется
+              disabled={
+                !isMoscowOrMainDomain &&
+                onlyPacksAndBlocks &&
+                totalQuantity < 10 &&
+                !hasBlock
+              }
             >
               Перейти к оформлению
             </button>
