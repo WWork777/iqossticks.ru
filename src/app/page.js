@@ -54,8 +54,8 @@ export function generateMetadata() {
 
   const city = cityNames[subdomain] || "России";
 
-  const title = `IQOS Iluma купить в ${city} | Стики Terea | IqosSticks`;
-  const description = `Оригинальные устройства IQOS Iluma и стики Terea. Низкие цены, доставка в ${city}. Гарантия качества и подлинности.`;
+  const title = `IQOS Iluma и стики Terea купить в ${city}`;
+  const description = `Стики IQOS и TEREA.  Оригинальная продукция, большой выбор вкусов, доставка в ${city}.`;
 
   return {
     title,

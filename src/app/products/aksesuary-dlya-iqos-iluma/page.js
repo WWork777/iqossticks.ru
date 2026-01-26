@@ -17,10 +17,9 @@ export async function generateMetadata() {
   const domain = host.replace(/^www\./, "");
   const pageUrl = `https://${domain}/products/aksesuary-dlya-iqos-iluma`;
 
-  const title =
-    "Купить аксессуары для IQOS ILUMA в IqosSticks с доставкой по России";
+  const title = "Аксессуары для IQOS";
   const description =
-    "Каталог аксессуаров для устройств IQOS ILUMA с доставкой по всей России. Лучший выбор вкусов и брендов!";
+    "Аксессуары для IQOS и ILUMA. Удобство, защита и уход за устройством.";
 
   return {
     title,
@@ -29,7 +28,7 @@ export async function generateMetadata() {
       canonical: pageUrl,
     },
     openGraph: {
-      title: `Купить аксессуары для IQOS ILUMA в IlumaPrime с доставкой по России`,
+      title: `Аксессуары для IQOS`,
       description,
       url: pageUrl,
       images: [

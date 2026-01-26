@@ -16,10 +16,9 @@ export async function generateMetadata() {
   const domain = host.replace(/^www\./, "");
   const pageUrl = `https://${domain}/products/ustrojstva-iqos-iluma`;
 
-  const title =
-    "Купить устройства IQOS ILUMA в IqosSticks с доставкой по России";
+  const title = "Устройства IQOS — купить";
   const description =
-    "Каталог устройств IQOS ILUMA с доставкой по всей России. Лучший выбор вкусов и брендов!";
+    "Устройства IQOS и ILUMA. Оригинал, актуальные модели, гарантия.";
 
   return {
     title,

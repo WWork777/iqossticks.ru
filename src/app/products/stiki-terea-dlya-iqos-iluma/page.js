@@ -17,19 +17,19 @@ export async function generateMetadata() {
   const domain = host.replace(/^www\./, "");
 
   const url = `https://${domain}/products/stiki-terea-dlya-iqos-iluma`;
-  const title = "Купить стики Terea в IqosSticks с доставкой по России";
+  const title = "Стики для IQOS и ILUMA";
 
   return {
     title,
     description:
-      "Купить стики Terea с доставкой. Лучший выбор вкусов и брендов!",
+      "Стики TEREA и HEETS для IQOS. Все вкусы в наличии, доставка по РФ.",
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: "Купить стики Terea в IlumaPrime с доставкой по России",
+      title: "Стики для IQOS и ILUMA",
       description:
-        "Купить стики Terea с доставкой. Лучший выбор вкусов и брендов!",
+        "Стики TEREA и HEETS для IQOS. Все вкусы в наличии, доставка по РФ.",
       url,
       images: [
         {

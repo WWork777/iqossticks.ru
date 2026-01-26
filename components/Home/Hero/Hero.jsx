@@ -15,11 +15,9 @@ export default function Hero() {
     <>
       <div className="hero-container">
         <div className="hero-seo">
-          <h1 className="hero-title">
-            Официальный магазин IQOS Iluma и стиков Terea
-          </h1>
+          <h1 className="hero-title">IQOS Iluma и Terea</h1>
           <p className="hero-subtitle">
-            Оригинальные устройства и стики Terea с доставкой по Москве и всей
+            Официальный магазин с доставкой оригинальных устройств и стиков по
             России.
           </p>
         </div>
