@@ -1,9 +1,10 @@
-export const dynamic = "force-dynamic";
-import ClientFilters from "./client";
 import { headers } from "next/headers";
 
+export const dynamic = "force-dynamic";
+import ClientFilters from "./client";
+
 async function fetchItems() {
-  const res = await fetch("https://iluma-store.ru/api/products/getiqos", {
+  const res = await fetch("https://iluma-store.ru/api/products/getdevices", {
     cache: "no-store",
   });
   if (!res.ok) throw new Error("Ошибка загрузки товаров");
@@ -14,12 +15,12 @@ export async function generateMetadata() {
   const headersList = headers();
   const host = headersList.get("host") || "iqossticks.ru";
   const domain = host.replace(/^www\./, "");
-  const pageUrl = `https://${domain}/products/iqos`;
+  const pageUrl = `https://${domain}/products/aksesuary-dlya-iqos-iluma`;
 
   const title =
-    "Купить устройства IQOS ILUMA в IqosSticks с доставкой по России";
+    "Купить аксессуары для IQOS ILUMA в IqosSticks с доставкой по России";
   const description =
-    "Каталог устройств IQOS ILUMA с доставкой по всей России. Лучший выбор вкусов и брендов!";
+    "Каталог аксессуаров для устройств IQOS ILUMA с доставкой по всей России. Лучший выбор вкусов и брендов!";
 
   return {
     title,
@@ -28,7 +29,7 @@ export async function generateMetadata() {
       canonical: pageUrl,
     },
     openGraph: {
-      title,
+      title: `Купить аксессуары для IQOS ILUMA в IlumaPrime с доставкой по России`,
       description,
       url: pageUrl,
       images: [
@@ -52,7 +53,7 @@ export default async function Page() {
 
   return (
     <div className="products-container">
-      <h1 style={{ position: "absolute", zIndex: "-9999" }}>Iqos Iluma</h1>
+      <h1 className="page-title">Купить аксессуары для IQOS ILUMA</h1>
       <ClientFilters items={items} />
     </div>
   );

@@ -80,13 +80,51 @@ export function generateMetadata() {
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Poster />
-      <Preview />
-      <Exclusive />
-      <New />
-      <About />
-      <Reviews />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Store",
+            name: "Iqos Iluma",
+            url: "https://айкос-илюма.рф",
+            description:
+              "Официальный магазин IQOS Iluma и стиков Terea с доставкой по России",
+            address: {
+              "@type": "PostalAddress",
+              addressCountry: "RU",
+              addressLocality: "Москва",
+            },
+          }),
+        }}
+      />
+      <main>
+        <section>
+          <Hero />
+        </section>
+        <section>
+          <Poster />
+        </section>
+        <section>
+          <Preview />
+        </section>
+
+        <section>
+          <Exclusive />
+        </section>
+
+        <section>
+          <New />
+        </section>
+
+        <section>
+          <About />
+        </section>
+
+        <section>
+          <Reviews />
+        </section>
+      </main>
     </>
   );
 }
