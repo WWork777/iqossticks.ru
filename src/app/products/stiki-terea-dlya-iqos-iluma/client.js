@@ -147,7 +147,7 @@ export default function ClientFilters({ items: initialItems }) {
     setSortOrder("default");
 
     router.replace("?", { scroll: false });
-    fetch("/api/filter/terea", {
+    fetch("/api/filter/stiki-terea-dlya-iqos-iluma", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
