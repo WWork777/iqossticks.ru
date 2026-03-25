@@ -92,9 +92,9 @@ const Contacts = () => {
       <h1>Контакты</h1>
 
       <div className="adress">
-        <p>
-          Телефон: <Link href="tel:+7 (995) 153-80-19">+7 (995) 153-80-19</Link>
-        </p>
+        {/* <p>
+          Телефон: <Link href="tel:"></Link>
+        </p> */}
         {showOffice && <p>Время работы: с 10:00 до 20:00, без выходных</p>}
       </div>
 
@@ -103,12 +103,12 @@ const Contacts = () => {
         <p>
           Telegram: <Link href="https://t.me/Ilumastore2025">@IqosIlumaRU</Link>
         </p>
-        <p>
+        {/* <p>
           Whatsapp:{" "}
           <Link href="https://api.whatsapp.com/send/?phone=79951538019&text=Здравствуйте%21+Хочу+оформить+заказ&type=phone_number&app_absent=0">
             +79951538019
           </Link>
-        </p>
+        </p> */}
       </div>
 
       {/* {showOffice && <Map />} */}

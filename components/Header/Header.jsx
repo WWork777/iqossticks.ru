@@ -190,7 +190,7 @@ export default function Header() {
               </a>
             </div>
             <div className="tel">
-              <a href="tel:+7 (995) 153-80-19">+7 (995) 153-80-19</a>
+              <a href="tel:"></a>
             </div>
           </div>
         </div>
@@ -339,7 +339,7 @@ export default function Header() {
                   </a>
                 </div>
                 <div className="tel">
-                  <a href="tel:+7 (995) 153-80-19">+7 (995) 153-80-19</a>
+                  <a href="tel:"></a>
                 </div>
               </div>
             </div>
