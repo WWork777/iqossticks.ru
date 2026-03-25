@@ -61,7 +61,7 @@ export default function Footer() {
         <div className="menu-footer">
           <div className="links">
             <Link href={"/products"}>Каталог</Link>
-            <Link href={"/contacts"}>Контакты</Link>
+            {/* <Link href={"/contacts"}>Контакты</Link> */}
             <Link href={"/sales"}>Акции</Link>
             <Link href={"/policy"}>Политика конфиденциальности</Link>
           </div>
@@ -94,7 +94,7 @@ export default function Footer() {
               </p>
             )}
           </div>
-          <div className="links-contacts">
+          {/* <div className="links-contacts">
             <a href="https://t.me/Ilumastore2025">
               <svg
                 width="35"
@@ -123,7 +123,7 @@ export default function Footer() {
                 />
               </svg>
             </a>
-          </div>
+          </div> */}
         </div>
       </footer>
     </>
