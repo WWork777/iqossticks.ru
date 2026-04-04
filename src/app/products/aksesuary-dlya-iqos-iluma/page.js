@@ -69,27 +69,10 @@ export async function generateMetadata() {
 }
 
 export default async function Page() {
-  let items = [];
-
-  try {
-    items = await fetchItems();
-  } catch (error) {
-    console.error("Page fetch error:", error);
-    return (
-      <div style={{ padding: "40px", textAlign: "center" }}>
-        <h1>Ошибка загрузки</h1>
-        <p>Не удалось загрузить список аксессуаров.</p>
-        <a href="/" style={{ color: "blue" }}>
-          На главную
-        </a>
-      </div>
-    );
-  }
-
   return (
     <div className="products-container">
       <h1 className="page-title">Купить аксессуары для IQOS ILUMA</h1>
-      <ClientFilters items={items} />
+      <ClientFilters apiUrl="/api/products/getdevices" />
     </div>
   );
 }

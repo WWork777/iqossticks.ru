@@ -2,9 +2,9 @@ import db from "@/lib/db";
 
 export async function GET(req) {
     try {
-        const [tereaRows] = await db.query("SELECT * FROM Terea WHERE hit = true");
-        const [iqosRows] = await db.query("SELECT * FROM Iqos WHERE hit = true");
-        const [deviceRows] = await db.query("SELECT * FROM Devices WHERE hit = true");
+        const [tereaRows] = await db.query("SELECT * FROM Terea WHERE hit = 1");
+        const [iqosRows] = await db.query("SELECT * FROM Iqos WHERE hit = 1");
+        const [deviceRows] = await db.query("SELECT * FROM Devices WHERE hit = 1");
 
         const result = {
             terea: tereaRows,
