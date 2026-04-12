@@ -257,7 +257,7 @@ const CheckoutPage = () => {
 
     if (validateForm()) {
       const totalPrice = calculateTotalPrice();
-      const site = "iluma-store.ru";
+      const site = "iqossticks.ru";
 
       const formattedCart = cartItems
         .map(
