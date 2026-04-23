@@ -554,10 +554,7 @@ ${selectedMethod === "delivery" ? `🏙 Город: ${formData.city || "Не у�
         <form onSubmit={handleSubmit} ref={formRef}>
           <div className="checkout-name">
             <h4>Контактные данные</h4>
-            <h5>
-              ВАЖНО! Укажите Ваш номер в WhatsApp или Telegram ник для
-              связи{" "}
-            </h5>
+            <h5>ВАЖНО! Укажите ваш номер и ваш username в Telegram.</h5>
 
             <input
               type="text"
@@ -678,16 +675,6 @@ ${selectedMethod === "delivery" ? `🏙 Город: ${formData.city || "Не у�
                 </li>
               ))}
             </ul>
-            <p style={{ marginBottom: "0px" }}>
-              Для удобства можно использовать{" "}
-              <Link
-                href={"https://t.me/ilumaStore_official_bot"}
-                style={{ textDecoration: "underline" }}
-              >
-                Telegram бот
-              </Link>{" "}
-              для заказа
-            </p>
             <div className="checkout-total">
               <p>Итого:</p>
               <p>{calculateTotalPrice()} ₽</p>
@@ -706,7 +693,7 @@ ${selectedMethod === "delivery" ? `🏙 Город: ${formData.city || "Не у�
               <p
                 style={{
                   color: "rgb(198, 58, 58)",
-                  fontSize: "14px",
+                                      fontSize: "14px",
                   textAlign: "center",
                   marginTop: "10px",
                 }}

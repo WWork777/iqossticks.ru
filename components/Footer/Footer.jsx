@@ -95,7 +95,7 @@ export default function Footer() {
             )}
           </div>
           {/* <div className="links-contacts">
-            <a href="https://t.me/Ilumastore2025">
+            <a href="#">
               <svg
                 width="35"
                 height="35"
