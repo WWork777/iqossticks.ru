@@ -9,6 +9,7 @@ import New from "../../components/Home/New/New";
 import Exclusive from "../../components/Home/Exclusive/Exclusive";
 import Reviews from "../../components/Home/Reviews/Reviews";
 import ModalManager from "../../components/ModalManager/ModalManager";
+import BlockModal from "../../components/ModalManager/BlockModal/BlockModal";
 
 const cityNames = {
   msk: "Москве",
@@ -125,6 +126,8 @@ export default function Home() {
           <Reviews />
         </section>
       </main>
+
+      <BlockModal />
     </>
   );
 }
